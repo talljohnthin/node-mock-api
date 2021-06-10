@@ -131,6 +131,8 @@ router.post("/create", async (req, res) => {
     res.json(data)
 });
 
-
+router.post("/zipcode/:zip", async (req, res) => {
+    res.json({"city":"La Crescenta","zipcode" :"91214", "state":"CA"}    )
+});
 
 module.exports = router; 
